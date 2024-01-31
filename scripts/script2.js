@@ -1,6 +1,5 @@
-function convertToF(celsius) {
-    let fahrenheit = celsius * 9/5 + 32
-    return fahrenheit;
-    document.getElementById("temp").innerHTML=fahrenheit;
+function celToFa(){
+    let temperature=prompt("Enter your temperature:");
+    let fahrenheit = (temperature * 9/5) + 32;
+    document.getElementById("").innerHTML=fahrenheit;
 }
-convertToF(30);
