@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Convert Celcius to Fahrenheit</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/mystyle.css">
     <title>Document</title>
 
 </head>
 <body>
-    <h1>JavaScript</h1>
+    <h1>Convert Celcius to Fahrenheit</h1>
 
-    <button onclick="increase()">Increase ++</button>
-    <button onclick="decrease()">Decrease --</button>
+    <button onclick=""convertToF(celsius)>C to F</button>
 
-
-    <button onclick="sayHi()">Say hi</button>
-
-    <button onclick="multibythree()">Multi by three</button>
-
-
-    <div class="results-zone">
-        <h4>Results</h4>
-        <p>id result</p>
+    <div id="temp">
     </div>
 
+    <p>
+        <label>Celsius</label>
+        <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+    </p>
+    <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
 
-    <script src="./scripts/script2.js"></script>
-</body>
+<script src="./scripts/script3.js"></script>
+
 </html>
+</body>
