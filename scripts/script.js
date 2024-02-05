@@ -1,28 +1,31 @@
-<script src="script.js"></script>
+function convertTemperature() {
+    let temperature = (document.getElementById('inputTemperature').value);
+    let scale = document.getElementById('scale').value;
+    let result;
+    if (scale === 'celsius') {
+        result = (temperature - 32) * (5/9);
+    } else {
+        result = (temperature * 9/5) + 32;
+    }
 
-console.log("Script");
+    document.getElementById('result').innerHTML = result.toFixed(2) + 'º' + (scale === 'celsius' ? 'Celsius' : 'Fahrenheit');
+}
 
+function convertTemperatureRange(){
+    let startValue = (document.getElementById("endValue").value);
+    let endValue = (document.getElementById("endValue").value);
+    let scale = document.getElementById("scale").value;
+    let result = document.getElementById("result");
 
-userName = "userName"; 
+for (let temperature = startValue; temperature <= endValue; temperature += 5) { 
+    let convertTemperatureRange
+    if (scale === "celsius") {
+        let convertTemperatureRange = (temperature * 9/5) + 32;
 
-console.log(userName);
-
-var linkedinButton1="Home";
-var linkedinButton2="My Network";
-var linkedinButton3="Jobs";
-var linkedinButton4="Messaging";
-var linkedinButton5="Notifications";
-var linkedinButton6="Me";
-
-
-document.write(
-    `
-    <h3>Navigation</h3>
-    <p>Button1: ${"Home"}</p>
-    <p>Button2: ${"My Network"}</p>
-    <p>Button3: ${"Jobs"}</p>
-    <p>Button4: ${"Messaging"}</p>
-    <p>Button5: ${"Notifications"}</p>
-    <p>Button6: ${"Me"}</p>
-    `
-);
+for (let temperature = startValue; temperature <= endValue; temperature + 5) {
+    let convertTemperatureRange
+    if (scale === "fahrenheit") {
+        let convertTemperature = (temperature - 32) * 5/9;
+} else {
+    result = "Invalid scale. Please enter 'C' for Celsius or 'F' for Fahrenheit.";
+}
