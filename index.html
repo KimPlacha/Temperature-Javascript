@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Convert Celcius to Fahrenheit</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatures🌡️</title>
     <link rel="stylesheet" href="./styles/mystyle.css">
-    <title>Document</title>
-
 </head>
 <body>
     <div class="container">
-        🥵☀️☁️❄️🥶
         <h1>Temperature Converter</h1>
-        <label for="inputTemperature">Enter Temperature</label>
+        <label for="inputTemperature"></label>
         <input type="number" id="inputTemperature" placeholder="Enter temperature" required>
     
         <label for="scale"></label>
@@ -21,14 +18,39 @@
             <option value="fahrenheit">Fº</option>
         </select>
     
-        <button onclick="convertTemperature()">Convert🌡️</button>
-    
-        <h2>Result</h2>
+        <button onclick="convertTemperature()">Convert</button>
+
         <p id="result">Converted temperature will appear here</p>
     </div>
 
+    <div class="container">
+        <h2>Temperature Range Converter</h2>
+
+        <label for="scale"></label>
+        <select id="scale">
+            <option value="celsius">Cº</option>
+            <option value="fahrenheit">Fº</option>
+        </select>
+
+        <script>
+            area.onselect = function convertTemperatureRange() {
+            from.value = area.startValue;
+            to.value = area.endValue;
+            }; 
+        </script>
+        
+        <label for="startValue">Enter a range of temperature to convert</label>
+        <input type="number" id="inputTemperature" placeholder="Enter temperature" required>
+        <label for="endValue" id="inputTemperature" placeholder="Enter temperature" required>
+        <input type="number" id="startValue" placeholder="Enter temperature" required>
+
+        <button onclick="convertTemperatureRange()">Convert🌡️</button>
+
+        <h2>Result:</h2>
+        <div id="result">Converted temperature range</div>
+    </div>
+    
     <script src="./scripts/script.js"></script>
 
 </html>
 </body>
-

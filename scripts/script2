@@ -1,0 +1,71 @@
+function convertTemperatureRange(){
+    let startValue = (document.getElementById("startValue").value);
+    let endValue = (document.getElementById("endValue").value);
+    let scale = document.getElementById("scale").value;
+    let result = document.getElementById("result");
+}
+
+for (let temperature = startValue; temperature <= startvalue; temperature + 5) {
+    let convertTemperatureRange
+    if (scale === "celsius") {
+        let convertTemperatureRange = (temperature * 9/5) + 32;
+
+for (let temperature = endValue; temperature <= endValue; temperature + 5) {
+    let convertTemperatureRange
+    if (scale === "fahrenheit") {
+        let convertTemperature = (temperature - 32) * 5/9;
+} else {
+    result = "Invalid scale. Please enter 'C' for Celsius or 'F' for Fahrenheit."
+}
+
+If it is "C", convert the temperature to Fahrenheit using the formula: Fahrenheit = (Celsius * 9/5) + 32
+
+If it is "F", convert the temperature to Celsius using the formula: Celsius = (Fahrenheit - 32) * 5/9
+
+
+
+
+
+
+
+let result;
+for (let startValue = (Fahrenheit = Celsius * 9/5) + 32);
+    if (scale === 'celsius') {
+    result = (temperature - 32) * (5/9);
+
+for (let endValue C Fahrenheit - 32) * 5/9
+if (scale = C)
+
+document.getElementById('result').innerHTML = result.toFixed(2) + 'º' + (scale === 'celsius' ? 'Celsius' : 'Fahrenheit');
+}
+
+
+if (scale === 'celsius') {
+result = (temperature - 32) * (5/9);
+} else {
+result = (temperature * 9/5) + 32;
+}
+
+
+
+function convertTemperatureRange() {
+let temperature = (document.getElementById('inputTemperature').value);
+let scale = document.getElementById('scale').value;
+
+let startValue = (document.getElementById('startValue').value);
+if scale === ('celsius') {
+    result = (temperature - 32) * (5/9);
+} else {
+    result = (temperature * 9/5) + 32;
+}
+
+document.getElementById('result').innerHTML = result.toFixed(2) + 'º' + (scale === 'celsius' ? 'Celsius' : 'Fahrenheit');
+}
+
+const number = 5;
+const numberArray = [];
+
+for(let i = 1; i <= number; i++){
+numberArray.push(i);
+}
+console.log(numberArray);

@@ -1,17 +1,17 @@
 body {
-    font-family: Arial;
-    background-image: url(https://www.freepik.com/free-vector/hand-painted-watercolor-pressed-flowers-pattern_13297921.htm#query=floral%20background&position=11&from_view=keyword&track=ais&uuid=edbe2ec0-1715-420a-81a1-278c3e0da787);
-    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(../img/flower.jpg);
+    margin: 50;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     min-height: 100vh;
 
 }
 .container {
     text-align: center;
-    background-color:rgb(185, 185, 119);
-    padding: 20px;
+    background-color:rgb(245, 179, 229);
+    padding: 40px;
     border-radius: 8px;
 
 }
